@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct FlashzillaApp: App {
+    @StateObject var flashzillaViewModel = FlashzillaViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                .environmentObject(flashzillaViewModel)
         }
     }
 }

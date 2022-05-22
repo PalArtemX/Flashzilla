@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		F8D76AA1283A4BAA00AC98A1 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D76AA0283A4BAA00AC98A1 /* FlashzillaApp.swift */; };
-		F8D76AA3283A4BAA00AC98A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D76AA2283A4BAA00AC98A1 /* ContentView.swift */; };
 		F8D76AA5283A4BAB00AC98A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D76AA4283A4BAB00AC98A1 /* Assets.xcassets */; };
 		F8D76AA8283A4BAB00AC98A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D76AA7283A4BAB00AC98A1 /* Preview Assets.xcassets */; };
+		F8D76AB2283A4DF700AC98A1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D76AB1283A4DF700AC98A1 /* HomeView.swift */; };
+		F8D76AB6283A4E5500AC98A1 /* FlashzillaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D76AB5283A4E5500AC98A1 /* FlashzillaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F8D76A9D283A4BAA00AC98A1 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D76AA0283A4BAA00AC98A1 /* FlashzillaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaApp.swift; sourceTree = "<group>"; };
-		F8D76AA2283A4BAA00AC98A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F8D76AA4283A4BAB00AC98A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8D76AA7283A4BAB00AC98A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8D76AB1283A4DF700AC98A1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F8D76AB5283A4E5500AC98A1 /* FlashzillaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,10 @@
 			isa = PBXGroup;
 			children = (
 				F8D76AA0283A4BAA00AC98A1 /* FlashzillaApp.swift */,
-				F8D76AA2283A4BAA00AC98A1 /* ContentView.swift */,
+				F8D76AB0283A4BC700AC98A1 /* Views */,
+				F8D76AAF283A4BBA00AC98A1 /* ViewModels */,
+				F8D76AAE283A4BB300AC98A1 /* Models */,
+				F8D76AB4283A4E1F00AC98A1 /* Extensions */,
 				F8D76AA4283A4BAB00AC98A1 /* Assets.xcassets */,
 				F8D76AA6283A4BAB00AC98A1 /* Preview Content */,
 			);
@@ -65,6 +70,44 @@
 				F8D76AA7283A4BAB00AC98A1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8D76AAE283A4BB300AC98A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F8D76AAF283A4BBA00AC98A1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F8D76AB5283A4E5500AC98A1 /* FlashzillaViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F8D76AB0283A4BC700AC98A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8D76AB1283A4DF700AC98A1 /* HomeView.swift */,
+				F8D76AB3283A4E1400AC98A1 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8D76AB3283A4E1400AC98A1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F8D76AB4283A4E1F00AC98A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8D76AA3283A4BAA00AC98A1 /* ContentView.swift in Sources */,
+				F8D76AB6283A4E5500AC98A1 /* FlashzillaViewModel.swift in Sources */,
+				F8D76AB2283A4DF700AC98A1 /* HomeView.swift in Sources */,
 				F8D76AA1283A4BAA00AC98A1 /* FlashzillaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
