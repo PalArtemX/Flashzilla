@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var vm: FlashzillaViewModel
+    @State private var cards = Array<Card>(repeating: Preview.card, count: 10)
     
     var body: some View {
         CardView(card: Preview.card)
