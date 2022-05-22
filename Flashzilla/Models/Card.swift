@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Cart {
+struct Card {
     let prompt: String
     let answer: String
 }
