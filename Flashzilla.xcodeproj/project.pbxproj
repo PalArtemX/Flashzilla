@@ -18,7 +18,7 @@
 		F8D76AC0283AC38500AC98A1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D76ABF283AC38500AC98A1 /* CardView.swift */; };
 		F8D76AC2283AC6BC00AC98A1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D76AC1283AC6BC00AC98A1 /* View.swift */; };
 		F8D76AC4283B990B00AC98A1 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D76AC3283B990B00AC98A1 /* TimerView.swift */; };
-		F8D76AC6283BAD7500AC98A1 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D76AC5283BAD7500AC98A1 /* CardStackView.swift */; };
+		F8D76AC6283BAD7500AC98A1 /* CardsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D76AC5283BAD7500AC98A1 /* CardsStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,7 @@
 		F8D76ABF283AC38500AC98A1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F8D76AC1283AC6BC00AC98A1 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		F8D76AC3283B990B00AC98A1 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
-		F8D76AC5283BAD7500AC98A1 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
+		F8D76AC5283BAD7500AC98A1 /* CardsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 			children = (
 				F8D76AB1283A4DF700AC98A1 /* HomeView.swift */,
 				F8D76ABF283AC38500AC98A1 /* CardView.swift */,
-				F8D76AC5283BAD7500AC98A1 /* CardStackView.swift */,
+				F8D76AC5283BAD7500AC98A1 /* CardsStackView.swift */,
 				F8D76AB3283A4E1400AC98A1 /* Components */,
 			);
 			path = Views;
@@ -206,7 +206,7 @@
 				F8D76AC0283AC38500AC98A1 /* CardView.swift in Sources */,
 				F8D76AB6283A4E5500AC98A1 /* FlashzillaViewModel.swift in Sources */,
 				F8D76AB8283A4FDE00AC98A1 /* Color.swift in Sources */,
-				F8D76AC6283BAD7500AC98A1 /* CardStackView.swift in Sources */,
+				F8D76AC6283BAD7500AC98A1 /* CardsStackView.swift in Sources */,
 				F8D76ABC283AC14300AC98A1 /* Preview.swift in Sources */,
 				F8D76ABA283AC04600AC98A1 /* Card.swift in Sources */,
 				F8D76AB2283A4DF700AC98A1 /* HomeView.swift in Sources */,

@@ -20,11 +20,10 @@ struct HomeView: View {
             VStack {
                 TimerView()
                 
-                CardStackView()
+                CardsStackView()
                 
                 if vm.cards.isEmpty {
                     Button("Start Again", action: vm.resetCards)
-                        .padding()
                         .buttonStyle(.borderedProminent)
                 }
             }

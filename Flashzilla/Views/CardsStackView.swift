@@ -1,5 +1,5 @@
 //
-//  CardStackView.swift
+//  CardsStackView.swift
 //  Flashzilla
 //
 //  Created by Artem Paliutin on 23/05/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardStackView: View {
+struct CardsStackView: View {
     @EnvironmentObject var vm: FlashzillaViewModel
     
     var body: some View {
@@ -36,7 +36,7 @@ struct CardStackView: View {
 
 struct CardStackView_Previews: PreviewProvider {
     static var previews: some View {
-        CardStackView()
+        CardsStackView()
             .environmentObject(FlashzillaViewModel())
             .previewInterfaceOrientation(.landscapeLeft)
     }

@@ -20,7 +20,6 @@ class FlashzillaViewModel: ObservableObject {
     
     func removeCard(at index: Int) {
         cards.remove(at: index)
-        
         if cards.isEmpty {
             isActive = false
         }
