@@ -9,10 +9,26 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var vm: FlashzillaViewModel
-    @State private var cards = Array<Card>(repeating: Preview.card, count: 10)
     
     var body: some View {
-        CardView(card: Preview.card)
+        ZStack {
+            Image("background")
+                .resizable()
+                .ignoresSafeArea()
+            
+            VStack {
+                ZStack {
+                    ForEach(0..<vm.cards.count, id: \.self) { index in
+                        CardView(card: vm.cards[index]) {
+                            withAnimation {
+                                vm.removeCard(at: index)
+                            }
+                        }
+                            .stacked(at: index, in: vm.cards.count)
+                    }
+                }
+            }
+        }
     }
 }
 
