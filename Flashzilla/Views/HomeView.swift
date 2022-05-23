@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var vm: FlashzillaViewModel
     @Environment(\.scenePhase) var scenePhase
+    @State private var showingEditScreen = false
     
     var body: some View {
         ZStack {
@@ -27,6 +28,22 @@ struct HomeView: View {
                         .buttonStyle(.borderedProminent)
                 }
             }
+            VStack {
+                HStack {
+                    Spacer()
+                    Button {
+                        showingEditScreen.toggle()
+                    } label: {
+                        Image(systemName: "plus.circle")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                            .symbolRenderingMode(.hierarchical)
+                            .padding()
+                    }
+
+                }
+                Spacer()
+            }
         }
         .onReceive(vm.timer) { time in
             guard vm.isActive else { return }
@@ -43,6 +60,10 @@ struct HomeView: View {
                 vm.isActive = false
             }
         }
+        .sheet(isPresented: $showingEditScreen, onDismiss: vm.resetCards) {
+            EditCardsView()
+        }
+        .onAppear(perform: vm.resetCards)
     }
 }
 
