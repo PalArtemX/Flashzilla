@@ -19,6 +19,8 @@ struct CardsStackView: View {
                     }
                 }
                 .stacked(at: index, in: vm.cards.count)
+                .allowsHitTesting(index == vm.cards.count - 1)
+                .accessibilityHidden(index < vm.cards.count - 1)
             }
         }
         .allowsTightening(vm.timeRemaining > 0)
